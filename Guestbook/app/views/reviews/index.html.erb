@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Гостевая книга</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody id="reviews">
+    <% @reviews.each do |review| %>
+      <tr>
+        <td>Автор: <%= review.author %></td>
+        <td>Комментарий: <%= review.comment %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<h1>Добавить комментарий</h1>
+
+<%= render 'form' %>
+
+<script>
+  
+</script>
