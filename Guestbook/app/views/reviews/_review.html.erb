@@ -1,0 +1,5 @@
+<tr>
+	<td>Автор: <%= review.author %></td>
+	<td>Комментарий: <%= review.comment %></td>
+	<td><%= link_to 'Удалить комментарий', review, method: :delete, data: { confirm: 'Уверен?' } %></td>
+</tr>
